@@ -18,8 +18,10 @@ namespace School_MIS.Models
         public Nullable<decimal> Grade { get; set; }
         public int CourseID { get; set; }
         public int StudentID { get; set; }
+        public Nullable<int> LecturesId { get; set; }
     
         public virtual Course Course { get; set; }
         public virtual Student Student { get; set; }
+        public virtual Lecture Lecture { get; set; }
     }
 }
